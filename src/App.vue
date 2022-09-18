@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="wrapper">
+    <the-header></the-header>
+    <main-panel></main-panel>
+  </div>
+  <about-me></about-me>
+  <the-education></the-education>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import TheHeader from "@/components/layouts/TheHeader.vue";
+import MainPanel from "@/components/layouts/MainPanel.vue";
+import AboutMe from "@/components/layouts/AboutMe.vue";
+import TheEducation from "@/components/layouts/TheEducation.vue";
 export default {
-  name: "App",
   components: {
-    HelloWorld,
+    TheHeader,
+    MainPanel,
+    AboutMe,
+    TheEducation,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+@import url("./assets/scss/variables.scss");
+
+.wrapper {
+  background-image: url("@/assets/imgs/sliderOne.jpeg");
 }
 </style>

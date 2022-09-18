@@ -1,0 +1,17 @@
+$base__color: #fc6f5c;
+
+@mixin icon {
+  background-color: $base__color;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+@mixin about__text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 30px;
+}
